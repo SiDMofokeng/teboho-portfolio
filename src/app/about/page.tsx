@@ -1,5 +1,6 @@
 // src/app/about/page.tsx
 import Link from "next/link";
+import AboutInfographics from '@/components/AboutInfographics'
 
 export const metadata = {
   title: "About | Teboho Sydney Mofokeng",
@@ -79,40 +80,8 @@ export default function AboutPage() {
       </div>
 
       {/* Skills */}
-      <section className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h3 className="text-2xl font-semibold">Design Skills</h3>
-          <p className="mt-2 text-slate-600 text-sm">Tools & capabilities I use when designing.</p>
-          <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
-            {designSkills.map((s) => (
-              <li key={s} className="text-sm">• {s}</li>
-            ))}
-          </ul>
-        </div>
+      <AboutInfographics />
 
-        <div>
-          <h3 className="text-2xl font-semibold">Development Skills</h3>
-          <p className="mt-2 text-slate-600 text-sm">Technologies I use for building and shipping apps.</p>
-          <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-slate-700">
-            {devSkills.map((s) => (
-              <li key={s} className="text-sm">• {s}</li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Experience timeline */}
-      <section className="mt-12">
-        <h3 className="text-2xl font-semibold">Experience</h3>
-        <div className="mt-4 space-y-3 text-slate-700">
-          {experience.map((e) => (
-            <div key={e.role} className="flex items-start gap-4">
-              <div className="w-28 text-xs text-slate-400">{e.year}</div>
-              <div className="text-sm">{e.role}</div>
-            </div>
-          ))}
-        </div>
-      </section>
     </main>
   );
 }

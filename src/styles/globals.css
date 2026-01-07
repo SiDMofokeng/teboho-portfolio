@@ -10,3 +10,35 @@ html, body {
 :root {
   --bg: #ffffff;
 }
+
+header {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+header a,
+header .icon,
+header svg {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+footer {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+footer a,
+footer .icon,
+footer svg {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+.text-black {
+    color: var(--color-black) !important;
+}
+
+a.text-sm.px-2.py-1.rounded.bg-white.text-black.font-semibold {
+    color: #000 !important;
+}

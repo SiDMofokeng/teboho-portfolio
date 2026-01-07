@@ -9,11 +9,16 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "canvas": "^3.2.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.25",
     "next": "16.0.7",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-transition-group": "^4.4.5",
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.26.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -23,6 +28,9 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.7",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
